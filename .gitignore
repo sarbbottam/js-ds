@@ -12,6 +12,7 @@ Thumbs.db
 ########
 coverage
 test-results.xml
+.nyc_output
 
 # Generated files #
 ###################
