@@ -1,0 +1,23 @@
+{
+  "name": "js-ds",
+  "version": "0.0.0",
+  "description": "data-structure implementations in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sarbbottam/js-ds.git"
+  },
+  "keywords": [
+    "data-structure",
+    "javascript"
+  ],
+  "author": "Sarbbottam Bandyopadhyay <sarbbottam@gmail.com> (https://sarbbottam.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarbbottam/js-ds/issues"
+  },
+  "homepage": "https://github.com/sarbbottam/js-ds"
+}
