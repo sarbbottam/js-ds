@@ -10,5 +10,5 @@ describe('Stack', () => {
     stack.push();
     assert.equal(stack.pop(), 1);
     assert.equal(stack.pop(), undefined);
-  })
-})
+  });
+});
