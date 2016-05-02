@@ -4,7 +4,7 @@
   "description": "data-structure implementations in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/sarbbottam/js-ds/issues"
   },
-  "homepage": "https://github.com/sarbbottam/js-ds"
+  "homepage": "https://github.com/sarbbottam/js-ds",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
