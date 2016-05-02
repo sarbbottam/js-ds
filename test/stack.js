@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Stack = require('../src/Stack');
+const Stack = require('../src/stack');
 
 const stack = new Stack();
 
