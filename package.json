@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "xo && nyc --reporter=lcov --reporter=text mocha",
+    "check-coverage": "nyc check-coverage --statement 100 --branches 100 --function 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
