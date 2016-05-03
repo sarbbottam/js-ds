@@ -18,3 +18,4 @@ Please note that this project is released with a [Contributor Code of Conduct](c
 
 - Please follow [this commit message convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines)
 - If you like to ease the process, you can use [commitizen](https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility)
+- Please add [`[ci skip]`](https://docs.travis-ci.com/user/customizing-the-build/#Skipping-a-build) to the commit messages for documentation only changes
