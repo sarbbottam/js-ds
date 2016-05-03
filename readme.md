@@ -3,6 +3,11 @@ js-ds
 
 data-structure implementations in JavaScript
 
+[![Travis](https://img.shields.io/travis/sarbbottam/js-ds.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/sarbbottam/js-ds)
+[![Codecov](https://img.shields.io/codecov/c/github/sarbbottam/js-ds.svg?maxAge=2592000&style=flat-square)](https://codecov.io/gh/sarbbottam/js-ds)
+[![MIT License](https://img.shields.io/npm/l/watch-and-rsync.svg?maxAge=2592000&style=flat-square)](http://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?maxAge=2592000&style=flat-square)](http://makeapullrequest.com)
+
 ---
 
 Most of the data-structure examples available across internet are either in C, C++ or Java.
