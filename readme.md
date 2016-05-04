@@ -28,4 +28,4 @@ The purpose of this repository is to serves as a data-structure guide/reference 
 
 ---
 
-Please refer the [Contributing guidelines](contributing.md) to enhance your contribution experience.
+Please refer [Roadmap](roadmap.md) and [Contributing guidelines](contributing.md) to enhance your contribution experience.
