@@ -25,3 +25,7 @@ For example, knowledge of tree traversal, is required for efficient DOM traversa
 
 Front-End developers like me, comprehends JavaScript much better than any other programming language.
 The purpose of this repository is to serves as a data-structure guide/reference for folks with JavaScript background.
+
+---
+
+Please refer the [Contributing guidelines](contributing.md) to enhance your contribution experience.
