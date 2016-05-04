@@ -47,3 +47,6 @@ logs
 pids
 *.pid
 *.seed
+
+# Editor
+.vscode
