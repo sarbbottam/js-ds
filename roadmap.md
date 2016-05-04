@@ -2,9 +2,9 @@
 
 - data-structures
   - linear
-    - [ ] stack
-    - [ ] queue
-    - [ ] singly-linked-list
+    - [x] stack
+    - [x] queue
+    - [x] singly-linked-list
     - [ ] doubly-linked-list
   - non-linear
     - [ ] binary search tree
