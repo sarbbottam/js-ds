@@ -5,6 +5,8 @@ class Node {
   }
 }
 
+LinkedList.Node = Node;
+
 function LinkedList() {
   let head = null;
 
@@ -90,6 +92,62 @@ function LinkedList() {
         currentNode.next = nextNode.next;
       }
     }
+  };
+
+  this.getFirst = () => {
+    return head;
+  };
+
+  this.getLast = () => {
+    let currentNode = head;
+    while (currentNode.next) {
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  };
+
+  this.getAt = index => {
+    let currentIndex = 1;
+    let currentNode = head;
+    while (currentNode && currentIndex < index) {
+      currentIndex += 1;
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  };
+
+  this.getLength = () => {
+    let length = 0;
+    let currentNode = head;
+    if (currentNode !== null) {
+      length += 1;
+    }
+    while (currentNode) {
+      length += 1;
+      currentNode = currentNode.next;
+    }
+    return length;
+  };
+
+  this.getAtFromLast = index => {
+    let desiredIndex = this.getLength() - index;
+    let currentNode = head;
+    desiredIndex -= 1;
+    while (desiredIndex) {
+      desiredIndex -= 1;
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  };
+
+  this.deleteNode = node => {
+    if (node.next === null) {
+      this.deleteLast();
+      return;
+    }
+    const nextNode = node.next;
+    node.value = nextNode.value;
+    node.next = nextNode.next;
   };
 
   this.traverse = () => {
