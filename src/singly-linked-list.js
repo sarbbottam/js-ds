@@ -13,18 +13,22 @@ function LinkedList() {
   this.addFirst = value => {
     if (value) {
       const newNode = new Node(value);
-      if (head) {
-        newNode.next = head;
+      if (!head) {
         head = newNode;
-      } else {
-        head = newNode;
+        return;
       }
+      newNode.next = head;
+      head = newNode;
     }
   };
 
   this.addLast = value => {
     if (value) {
       const newNode = new Node(value);
+      if (!head) {
+        head = newNode;
+        return;
+      }
       let currentNode = head;
       while (currentNode.next !== null) {
         currentNode = currentNode.next;
@@ -37,6 +41,10 @@ function LinkedList() {
     let currentIndex = 1;
     if (value) {
       const newNode = new Node(value);
+      if (!head) {
+        head = newNode;
+        return;
+      }
       let currentNode = head;
       while (currentNode.next !== null) {
         currentIndex += 1;
@@ -51,16 +59,18 @@ function LinkedList() {
   };
 
   this.deleteFirst = () => {
-    if (head !== null) {
+    if (head) {
       head = head.next;
     }
   };
 
   this.deleteLast = () => {
-    if (head !== null) {
+    if (head) {
       let currentNode = head;
       let nextNode = currentNode.next;
+      // if there is only a single node
       if (!nextNode) {
+        head = null;
         return;
       }
       while (nextNode.next !== null) {
@@ -73,7 +83,7 @@ function LinkedList() {
 
   this.deleteAt = index => {
     let currentIndex = 1;
-    if (head !== null) {
+    if (head) {
       let currentNode = head;
       let previousNode;
       while (currentNode.next !== null) {
@@ -99,6 +109,9 @@ function LinkedList() {
   };
 
   this.getLast = () => {
+    if (!head) {
+      return null;
+    }
     let currentNode = head;
     while (currentNode.next) {
       currentNode = currentNode.next;
@@ -107,22 +120,28 @@ function LinkedList() {
   };
 
   this.getAt = index => {
-    let currentIndex = 1;
-    let currentNode = head;
-    while (currentNode && currentIndex < index) {
-      currentIndex += 1;
-      currentNode = currentNode.next;
+    if (index) {
+      if (!head) {
+        return null;
+      }
+      let currentIndex = 1;
+      let currentNode = head;
+      while (currentNode && currentIndex < index) {
+        currentIndex += 1;
+        currentNode = currentNode.next;
+      }
+      return currentNode;
     }
-    return currentNode;
   };
 
   this.getLength = () => {
     let length = 0;
-    let currentNode = head;
-    if (currentNode !== null) {
-      length += 1;
+    if (!head) {
+      return length;
     }
-    while (currentNode) {
+    length += 1;
+    let currentNode = head;
+    while (currentNode.next) {
       length += 1;
       currentNode = currentNode.next;
     }
@@ -130,9 +149,11 @@ function LinkedList() {
   };
 
   this.getAtFromLast = index => {
+    if (!head) {
+      return null;
+    }
     let desiredIndex = this.getLength() - index;
     let currentNode = head;
-    desiredIndex -= 1;
     while (desiredIndex) {
       desiredIndex -= 1;
       currentNode = currentNode.next;
@@ -141,10 +162,15 @@ function LinkedList() {
   };
 
   this.deleteNode = node => {
+    if (!node) {
+      return;
+    }
+
     if (node.next === null) {
       this.deleteLast();
       return;
     }
+
     const nextNode = node.next;
     node.value = nextNode.value;
     node.next = nextNode.next;
