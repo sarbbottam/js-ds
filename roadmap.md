@@ -5,7 +5,7 @@
     - [x] stack
     - [x] queue
     - [x] singly-linked-list
-    - [ ] doubly-linked-list
+    - [x] doubly-linked-list
   - non-linear
     - [ ] binary search tree
     - [ ] graph
