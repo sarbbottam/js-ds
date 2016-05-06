@@ -3,7 +3,7 @@ const LinkedList = require('../src/singly-linked-list');
 
 let linkedList;
 
-describe('LinkedList', () => {
+describe('SinglyLinkedList', () => {
   beforeEach(() => {
     linkedList = new LinkedList();
   });
