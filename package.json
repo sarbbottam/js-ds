@@ -4,7 +4,7 @@
   "description": "data-structure implementations in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "xo && nyc --reporter=lcov --reporter=text mocha",
+    "test": "xo && nyc --reporter=lcov --reporter=text --exclude lib/**/test.js mocha lib/**/test.js",
     "check-coverage": "nyc check-coverage --statement 100 --branches 100 --function 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
