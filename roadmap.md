@@ -4,17 +4,18 @@
   - linear
     - [x] stack
     - [x] queue
-    - [x] singly-linked-list
-    - [x] doubly-linked-list
+    - [x] linked-list
+      - [x] singly
+      - [x] doubly
   - non-linear
     - [ ] binary search tree
     - [ ] graph
 - algorithms
   - sorting
-    - [ ] selection
-    - [ ] bubble
-    - [ ] insertion
-    - [ ] merge
+    - [x] selection
+    - [x] bubble
+    - [x] insertion
+    - [x] merge
     - [ ] quick
   - recursion
     - [ ] memoization
