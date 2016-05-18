@@ -16,6 +16,6 @@
     - [x] bubble
     - [x] insertion
     - [x] merge
-    - [ ] quick
+    - [x] quick
   - recursion
     - [ ] memoization
