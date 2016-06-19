@@ -24,6 +24,7 @@
   "homepage": "https://github.com/sarbbottam/js-ds",
   "devDependencies": {
     "chai": "^3.5.0",
+    "chai-sorted": "^0.1.0",
     "codecov.io": "^0.1.6",
     "mocha": "^2.4.5",
     "nyc": "^6.4.2",
@@ -34,6 +35,9 @@
       "mocha"
     ],
     "esnext": true,
-    "space": true
+    "space": true,
+    "rules": {
+      "linebreak-style": 0
+    }
   }
 }
