@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sarbbottam/js-ds",
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.0",
     "chai-sorted": "^0.1.0",
     "codecov.io": "^0.1.7",
     "mocha": "^3.0.1",
